@@ -1,0 +1,67 @@
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('C:\Users\HRITHIK THAKUR\Desktop\Ayushi\my-react-app\src\Ayushi.jpeg'); /* Background image */
+    background-size:90%; /* Cover the entire screen */
+    background-position: center; /* Center the background image */
+    min-height: 150vh; /* Ensure the body covers the full viewport height */
+    position: relative; /* Set position to relative for absolute positioning of bottom text */
+  }
+  
+  .container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 20px;  /* Adjust padding to accommodate bottom text */
+  }
+  
+  .birthday-wish-container {
+    text-align: center;
+    padding: 50px;
+    /* background-image: url('C:\Users\HRITHIK THAKUR\Desktop\Ayushi\my-react-app\src\Ayushi.jpeg');  */
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 20px; /* Add border radius to container */
+    margin: 50px auto; /* Center the container horizontally */
+    max-width: 600px; /* Limit the maximum width of the container */
+  }
+  
+  .birthday-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .birthday-message {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .birthday-signature {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .birthday-name {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .bottom-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Background color for the bottom text with transparency */
+    padding: 20px;
+    text-align: center;
+  }

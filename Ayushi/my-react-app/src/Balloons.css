@@ -1,0 +1,51 @@
+.balloons-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.balloons-left,
+.balloons-right,
+.balloons-between {
+  display: flex;
+}
+
+.balloons-left {
+  justify-content: flex-start;
+}
+
+.balloons-right {
+  justify-content: flex-end;
+}
+
+.balloon {
+  width: 30px;
+  height: 40px;
+  background-color: #df280f;
+  border-radius: 50% 50% 50% 0;
+  position: relative;
+  animation: moveUp 5s ease-in-out infinite;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.balloon span {
+  color: white;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-200px) rotate(45deg);
+  }
+  100% {
+    transform: translateY(-400px) rotate(0deg);
+  }
+}
